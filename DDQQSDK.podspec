@@ -16,9 +16,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "8.0"
 
+  s.compiler_flags = '-ObjC'
+
   s.source       = { :git => "https://github.com/djs66256/DDQQSDK.git", :tag => "#{s.version}" }
 
-  s.ios.vendored_frameworks = "QQ/*.framework"
-  s.ios.resources = "QQ/*.bundle"
+  s.vendored_frameworks = "QQ/*.framework"
+  s.resources = "QQ/*.bundle"
 
 end
